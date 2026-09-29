@@ -1,5 +1,4 @@
 import uuid
-
 import pytest
 import requests
 from faker import Faker
@@ -7,11 +6,9 @@ from faker import Faker
 BASE_URL = "https://automation.tivaliclub.com/fcle"
 fake = Faker()
 
-
 @pytest.fixture(scope="session")
 def base_url():
     return BASE_URL
-
 
 @pytest.fixture(scope="session")
 def session():
@@ -19,11 +16,9 @@ def session():
         s.headers.update({"Accept": "application/json"})
         yield s
 
-
 @pytest.fixture
 def signup_url(base_url):
     return f"{base_url}/api/Auth/signup"
-
 
 @pytest.fixture
 def new_user():
