@@ -1,6 +1,6 @@
 # Autotest
 
-Тестовое задание: автотесты на Python (pytest + requests) для регистрации
+Автотесты на Python (pytest + requests) для регистрации
 нового аккаунта. Тесты написаны по паттерну AAA (Arrange/Act/Assert).
 
 Базовый URL: https://automation.tivaliclub.com/fcle
